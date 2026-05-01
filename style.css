@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    background-color: cornflowerblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    gap: 20px;
+    height: 100vh;
+}
+#card {
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px rgb(48, 48, 48);
+    padding: 30px;
+    gap: 20px;
+    background-color: rgb(0, 107, 164);
+    display: flex;
+    min-height: 100px;
+    min-width: 350px;
+    flex-direction: column;
+}
+#card h1 {
+    font-size: 27px;
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+}
+#icon {
+    font-size: 35px;
+}
+input {
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 10px;
+    padding: 8px 10px;
+    width: 200px;
+    font-size: 25px;
+    text-align: center;
+}
+form {
+    display: flex;
+    gap: 35px;
+}
+button {
+    background-color: rgb(0, 195, 0);
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    width: 120px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+button:hover {
+    transform: translateY(-7px);
+    background-color: rgb(0, 148, 0);
+}
