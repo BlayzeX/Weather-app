@@ -7,6 +7,7 @@ weatherForm.addEventListener('submit', async event => {
 
      const city = input.value;
     if(city) {
+        localStorage.setItem('city', city);
         try{
            const weatherData = await getWeatherData(city);
            displayWeatherData(weatherData);
@@ -86,3 +87,16 @@ function getWeatherEmoji(WeatherId) {
             return "?";
     }
 }
+async function saveData(){
+    const savedCity = localStorage.getItem('city');
+        if (savedCity) {
+        try {
+            const weatherData = await getWeatherData(savedCity);
+            displayWeatherData(weatherData);
+        } catch (error) {
+            console.error(error);
+        }
+    }
+}
+
+saveData();
